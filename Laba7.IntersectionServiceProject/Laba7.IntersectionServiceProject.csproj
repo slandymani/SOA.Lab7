@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <InvariantGlobalization>true</InvariantGlobalization>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Laba7.CalculationServiceProject\Laba7.CalculationServiceProject.csproj" />
+      <ProjectReference Include="..\Laba7.GraphicLib\Laba7.GraphicLib.csproj" />
+      <ProjectReference Include="..\Laba7.GraphicsServiceProject\Laba7.GraphicsServiceProject.csproj" />
+    </ItemGroup>
+
+</Project>

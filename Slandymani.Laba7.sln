@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba7.CalculationLib", "Laba7.CalculationLib\Laba7.CalculationLib.csproj", "{882CE4F0-ED92-4DE0-87FF-543B6F8F18AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba7.GraphicLib", "Laba7.GraphicLib\Laba7.GraphicLib.csproj", "{6956C0C8-87C1-4675-B693-CAEA0A238DAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba7.CalculationServiceProject", "Laba7.CalculationServiceProject\Laba7.CalculationServiceProject.csproj", "{FDFDB3B8-A24C-486E-9522-7943B9FA85D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba7.GraphicsServiceProject", "Laba7.GraphicsServiceProject\Laba7.GraphicsServiceProject.csproj", "{C9562844-80A5-48E7-9AA4-40E9C33DFF48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba7.Client", "Laba7.Client\Laba7.Client.csproj", "{891EF723-2BD4-4906-AADD-D12D67110A9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba7.IntersectionServiceProject", "Laba7.IntersectionServiceProject\Laba7.IntersectionServiceProject.csproj", "{6342F978-6AB7-4591-A6A2-FBE0CFB93C9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{882CE4F0-ED92-4DE0-87FF-543B6F8F18AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{882CE4F0-ED92-4DE0-87FF-543B6F8F18AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{882CE4F0-ED92-4DE0-87FF-543B6F8F18AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{882CE4F0-ED92-4DE0-87FF-543B6F8F18AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6956C0C8-87C1-4675-B693-CAEA0A238DAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6956C0C8-87C1-4675-B693-CAEA0A238DAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6956C0C8-87C1-4675-B693-CAEA0A238DAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6956C0C8-87C1-4675-B693-CAEA0A238DAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDFDB3B8-A24C-486E-9522-7943B9FA85D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDFDB3B8-A24C-486E-9522-7943B9FA85D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDFDB3B8-A24C-486E-9522-7943B9FA85D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDFDB3B8-A24C-486E-9522-7943B9FA85D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9562844-80A5-48E7-9AA4-40E9C33DFF48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9562844-80A5-48E7-9AA4-40E9C33DFF48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9562844-80A5-48E7-9AA4-40E9C33DFF48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9562844-80A5-48E7-9AA4-40E9C33DFF48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{891EF723-2BD4-4906-AADD-D12D67110A9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{891EF723-2BD4-4906-AADD-D12D67110A9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{891EF723-2BD4-4906-AADD-D12D67110A9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{891EF723-2BD4-4906-AADD-D12D67110A9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6342F978-6AB7-4591-A6A2-FBE0CFB93C9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6342F978-6AB7-4591-A6A2-FBE0CFB93C9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6342F978-6AB7-4591-A6A2-FBE0CFB93C9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6342F978-6AB7-4591-A6A2-FBE0CFB93C9D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

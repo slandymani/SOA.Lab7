@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "M56S2WQvC6o=",
+  "success": true,
+  "projectFilePath": "/Users/polcraz/Projects/github.com/slandymani/Slandymani.Laba7/Laba7.GraphicsServiceProject/Laba7.GraphicsServiceProject.csproj",
+  "expectedPackageFiles": [
+    "/Users/polcraz/.nuget/packages/microsoft.dotnet.ilcompiler/8.0.6/microsoft.dotnet.ilcompiler.8.0.6.nupkg.sha512",
+    "/Users/polcraz/.nuget/packages/microsoft.net.illink.tasks/8.0.6/microsoft.net.illink.tasks.8.0.6.nupkg.sha512",
+    "/Users/polcraz/.nuget/packages/microsoft.win32.systemevents/8.0.0/microsoft.win32.systemevents.8.0.0.nupkg.sha512",
+    "/Users/polcraz/.nuget/packages/sixlabors.fonts/2.0.4/sixlabors.fonts.2.0.4.nupkg.sha512",
+    "/Users/polcraz/.nuget/packages/sixlabors.imagesharp/3.1.6/sixlabors.imagesharp.3.1.6.nupkg.sha512",
+    "/Users/polcraz/.nuget/packages/sixlabors.imagesharp.drawing/2.1.4/sixlabors.imagesharp.drawing.2.1.4.nupkg.sha512",
+    "/Users/polcraz/.nuget/packages/system.drawing.common/8.0.11/system.drawing.common.8.0.11.nupkg.sha512",
+    "/Users/polcraz/.nuget/packages/runtime.osx-arm64.microsoft.dotnet.ilcompiler/8.0.6/runtime.osx-arm64.microsoft.dotnet.ilcompiler.8.0.6.nupkg.sha512"
+  ],
+  "logs": []
+}

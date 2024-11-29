@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Slandymani.Laba7</title>
+    <style>
+        html, body {
+            width: 100%;
+        }
+
+        .flex {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .flex-col {
+            flex-direction: column;
+        }
+
+        .gap-4 {
+            gap: 2rem;
+        }
+
+        .gap-2 {
+            gap: 1rem;
+        }
+
+        .gap {
+            gap: 0.5rem;
+        }
+
+        .w-fit {
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+<main class="flex flex-col gap-4">
+    <section>
+        <h2>Line 1:</h2>
+        <div class="flex flex-col gap-2">
+            <div class="flex gap-2">
+                <div class="flex gap w-fit">
+                    <label htmlFor="x1Input">X1:</label>
+                    <input type="number" id="x1Input" value="100" />
+                </div>
+                <div class="flex gap">
+                    <label htmlFor="y1Input">Y1:</label>
+                    <input type="number" id="y1Input" value="100" />
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <div class="flex gap w-fit">
+                    <label htmlFor="x2Input">X2:</label>
+                    <input type="number" id="x2Input" value="200" />
+                </div>
+                <div class="flex gap">
+                    <label htmlFor="y2Input">Y2:</label>
+                    <input type="number" id="y2Input" value="200" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Line 2:</h2>
+        <div class="flex flex-col gap-2">
+            <div class="flex gap-2">
+                <div class="flex gap w-fit">
+                    <label htmlFor="x3Input">X3:</label>
+                    <input type="number" id="x3Input" value="600" />
+                </div>
+                <div class="flex gap w-fit">
+                    <label htmlFor="y3Input">Y3:</label>
+                    <input type="number" id="y3Input" value="0" />
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <div class="flex gap w-fit">
+                    <label htmlFor="x4Input">X4:</label>
+                    <input type="number" id="x4Input" value="0" />
+                </div>
+                <div class="flex gap w-fit">
+                    <label htmlFor="y4Input">Y4:</label>
+                    <input type="number" id="y4Input" value="600" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="flex flex-col gap-2 w-fit">
+        <button id="actionBtn">Draw Lines</button>
+        <div class"flex gap">
+        <span id="x"></span>
+        <span id="y"></span>
+        </div>
+        <img id="resultImg" alt="image" />
+    </section>
+</main>
+
+<script>
+    const API_URL = 'http://localhost:5161/'
+
+    async function onClick() {
+        const x1 = parseFloat(document.querySelector('#x1Input').value);
+        const y1 = parseFloat(document.querySelector('#y1Input').value);
+        const x2 = parseFloat(document.querySelector('#x2Input').value);
+        const y2 = parseFloat(document.querySelector('#y2Input').value);
+        const x3 = parseFloat(document.querySelector('#x3Input').value);
+        const y3 = parseFloat(document.querySelector('#y3Input').value);
+        const x4 = parseFloat(document.querySelector('#x4Input').value);
+        const y4 = parseFloat(document.querySelector('#y4Input').value);
+
+        const body = {
+            "Line1Point1": [x1, y1],
+            "Line1point2": [x2, y2],
+            "Line2Point1": [x3, y3],
+            "Line2Point2": [x4, y4]
+        };
+        
+        const response = await fetch(API_URL, {
+            method: "POST",
+            body: JSON.stringify(body),
+            headers: {
+                "Content-Type": "application/json",
+                "Accepts": "application/json"
+            }
+        }).then((res) => res.json());
+        
+        const { base64: { data: base64 }, intersectionPoint: { x, y } } = response;
+        document.getElementById('resultImg').setAttribute("src", `data:image/png;base64,${base64}`);
+        document.getElementById('x').innerHTML = `X: ${x}`;
+        document.getElementById('y').innerHTML = `Y: ${y}`;
+    }
+    
+    document.getElementById('actionBtn').addEventListener("click", onClick);
+</script>
+</body>
+</html>
